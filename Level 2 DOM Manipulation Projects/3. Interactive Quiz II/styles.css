@@ -1,0 +1,99 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgba(44, 106, 213, 0.174);
+}
+
+.main {
+    background-color: rgba(11, 58, 141, 0.498);
+    border: 2px solid rgba(162, 86, 213, 0);
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    border-radius: 08px;
+    -webkit-border-radius: 08px;
+    -moz-border-radius: 08px;
+    -ms-border-radius: 08px;
+    -o-border-radius: 08px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    & header {
+        background-color: rgba(162, 86, 213, 0.712);
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin: 1% auto 0;
+        /*    margin: [top] [right] [bottom] [left];   */
+        color: #fff;
+        width: 50%;
+        letter-spacing: 0.3px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    & .questioncontainer .question {
+        padding: 15px;
+        height: 55vh;
+        width: 70%;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        & .optionscontainer {
+            width: 75%;
+            margin-top: 20px;
+            line-height: 45px;
+            & input[type="checkbox"] {
+                height: 20px;
+                width: 20px;
+                accent-color: rgba(162, 86, 213, 0.712);
+                align-items: center;
+                padding: 20px;
+            }
+        }
+        & .operations {
+            display: flex;
+            justify-content: space-evenly;
+            width: 20%;
+            margin: 40px auto auto auto;
+            text-align: center;
+            padding: 10px;
+            /* background-color: rgba(162, 86, 213, 0.712); */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            border-radius: 10px;
+        }
+        & #previous,
+        #next {
+            background-color: rgba(22, 7, 119, 0);
+            cursor: pointer;
+            & button {
+                cursor: pointer;
+                font-size: 28px;
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.operations button:hover {
+    color: white;
+    font-size: 30px;
+}
+
+
+/* .questioncontainer {
+    overflow: auto;
+} */

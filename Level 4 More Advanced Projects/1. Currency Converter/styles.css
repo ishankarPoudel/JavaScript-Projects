@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6d12c2;
+    /* opacity: 0.8; */
+    font-family: 'Urbanist', sans-serif;
+}
+
+.main {
+    height: 75vh;
+    background: transparent;
+    backdrop-filter: blur(55px);
+    width: 30vw;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: flex; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgb(162, 48, 249) 0px 0px 0px 1px inset;
+    border: 1px solid linear-gradient(circle, transparent 20%, rgb(232, 227, 233) 20%, #e3dde8 80%, transparent 80%, transparent), linear-gradient( transparent 20%, #7b48a5b6 20%, #ccb3e3 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#eeecef33 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #933ce5 0.8px, #424aab 0.8px) -0.4px 8;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.heading {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1.0px;
+    font-family: Calibri;
+}
+
+.From {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.amount {
+    margin-top: 7px;
+}
+
+.From select {
+    outline: none;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(115, 8, 148, 0.418);
+    color: white;
+    font-size: 14px;
+}
+
+.amount input {
+    outline: none;
+    height: 26px;
+    width: 95px;
+    background-color: rgba(115, 8, 148, 0.418);
+    font-size: 14px;
+    border: .1px solid rgba(255, 255, 255, 0.295);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.icon {
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* background-color: red; */
+    font-size: 90px;
+    & i {
+        color: #ecb7fc;
+    }
+}
+
+.hero {
+    animation: rotate 1.5s ease-in-out 4;
+    -webkit-animation: rotate 1.5s ease-in-out 4;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.result {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.submit button {
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #7e21ced3;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: rgba(91, 6, 139, 0.895);
+    border: .1px solid rgba(255, 255, 255, 0.295);
+}
+
+footer {
+    font-size: 12.5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.808);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 5px;
+}

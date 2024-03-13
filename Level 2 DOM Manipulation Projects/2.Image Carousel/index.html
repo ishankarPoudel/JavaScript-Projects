@@ -1,0 +1,55 @@
+<!-- Build a simple image carousel that allows users to navigate through a set of images. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel using Javascript</title>
+    <style>
+        .main {
+            height: 80vh;
+            width: auto;
+            background-color: orangered;
+            border: 5px solid red;
+            & .slides {
+                display: grid;
+                place-items: center;
+                padding: 20px;
+            }
+            & .operations {
+                display: grid;
+                place-items: center;
+                gap: 20px;
+                & button {
+                    padding: 10px;
+                    background-color: orange;
+                    outline: none;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="slides">
+            <img src="images/carouse1.png" alt="carouse1" id="picture">
+        </div>
+        <div class="operations">
+            <span>
+             <button id="preBtn">Previous</button>
+            <button id="nextBtn">Next</button></span>
+
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

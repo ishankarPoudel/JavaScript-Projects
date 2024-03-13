@@ -1,0 +1,119 @@
+<!-- Create a to-do list where users can add and remove tasks. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Simple TODO List</title>
+</head>
+<style>
+    .main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 400px;
+        width: 700px;
+        background-color: orange;
+        text-align: center;
+        place-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        overflow: auto;
+    }
+    
+    .tasksInput input {
+        width: 60%;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    .tasksInput i {
+        font-size: 14px;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 2px;
+        background-color: grey;
+        text-align: center;
+        margin: 10px;
+        font-size: 21px;
+        border: 2px solid white;
+    }
+    
+    .tasksInput i:hover {
+        background-color: orangered;
+        border: 2 px solid yellow;
+        scale: 0.9;
+    }
+    
+    .tasks-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .first {
+        display: flex;
+        background-color: orangered;
+        text-align: center;
+        padding: 8px;
+        border-radius: 10px;
+        font-size: 16px;
+        width: 50%;
+    }
+    
+    .deleteButton {
+        cursor: pointer;
+        padding: 3px;
+        margin: 10px;
+        font-size: 21px;
+        color: orangered;
+    }
+    
+    .deleteButton:hover {
+        color: black;
+        scale: 1.2;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h1>Simple TODO List By Shankar Poudel</h1>
+        <hr>
+        <div id="add-tasks">
+            <div class="tasksInput">
+                <input type="text" name="text" id="taskvalue" placeholder="Add a task">
+                <i class="fa-sharp fa-solid fa-plus" id="createNewTask"></i>
+            </div>
+            <!-- showing tasks here -->
+            <div class="all">
+
+                <!-- task 1 -->
+
+                <!-- task 2 -->
+
+
+
+
+                <!-- end of task 2 -->
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+        <script src="index.js"></script>
+</body>
+
+</html>

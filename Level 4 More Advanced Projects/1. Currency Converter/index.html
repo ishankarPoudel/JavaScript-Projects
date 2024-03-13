@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <title>Currency Converter By Shankar Poudel</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            Currency Converter
+            <hr />
+        </div>
+        <div class="From">
+            <h3>From</h3><br>
+            <label for="currency">Choose currency:</label>
+
+            <select id="currencycodefrom">
+          <!-- <option value=""></option>
+          <option value=""></option> -->
+          
+        </select>
+            <div class="amount">
+                Enter the amount to convert:
+                <input type="number" name="number" id="number" value="1" />
+            </div>
+        </div>
+
+        <div class="icon"><i class="fa-sharp fa-solid fa-arrows-rotate ghum"></i></div>
+        <div class="to">
+            <div class="From">
+                <h3>To</h3><br>
+                <label for="currency">Choose currency:</label>
+
+                <select id="currencycodeto">
+              <!-- <option value="USD">USD</option>
+              <option value="CAD">CAD</option> -->
+            </select>
+                <!-- <div class="amount">
+                    Enter the amount to convert:
+                    <input type="number" name="number" id="number" />
+                </div> -->
+            </div>
+        </div>
+        <div class="submit">
+            <button id="button">Convert</button>
+        </div>
+        <div class="result">
+            <!-- this is the result -->
+        </div>
+        <footer>
+            Copyright &copy; Shankar Poudel 2024
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
