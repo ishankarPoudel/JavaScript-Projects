@@ -50,4 +50,3 @@ searchBtn.addEventListener("click", () => {
     generateResults();
 
 });
-s
